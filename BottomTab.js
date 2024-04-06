@@ -21,7 +21,7 @@ const BottomTab = () => {
     >
       <Tab.Screen
         name="Home"
-        component={Consumption}
+        component={HomeScreen}
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ color, size }) => (
@@ -41,7 +41,7 @@ const BottomTab = () => {
 
       <Tab.Screen
         name="Consumption"
-        component={HomeScreen}
+        component={Consumption}
         options={{
           tabBarLabel: "Home",
           tabBarIcon: ({ color, size }) => (

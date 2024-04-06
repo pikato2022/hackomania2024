@@ -20,8 +20,9 @@ const styles = StyleSheet.create({
     shadowRadius: 2,
     marginHorizontal: 4,
     marginVertical: 6,
-    width: 350,
-    height: 180,
+    
+    minWidth: "80%",
+    minHeight: 180,
   },
   cardContent: {
     marginHorizontal: 18,

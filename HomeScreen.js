@@ -6,13 +6,13 @@ const HomeScreen = () => {
   return (
     <View style={styles.container}>
       <Card>
-        <Text>Power Consumption</Text>
+        <Text style={styles.textContainer}>Power Consumption</Text>
       </Card>
       <Card>
-        <Text>Estate Overview</Text>
+        <Text style={styles.textContainer}>Estate Overview</Text>
       </Card>
       <Card>
-        <Text>Reward Points</Text>
+        <Text style={styles.textContainer}>Reward Points</Text>
       </Card>
     </View>
   );
@@ -24,6 +24,10 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContents: "center",
+  },
+  textContainer: {
+    fontSize: 15,
+    fontWeight: "500",
   },
 });
 export default HomeScreen;

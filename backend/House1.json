@@ -1,0 +1,29 @@
+{
+    "house": {
+        "cnt": 1,
+        "housecnt": 3,
+        "kWin": [
+            {
+                "aircon": 5.0,
+                "lighting": 0.2,
+                "kitchen": 1.0,
+                "multiplug": 0.02,
+                "miscellaneous": 0.05
+            },
+            {
+                "aircon": 5.0,
+                "lighting": 0.2,
+                "kitchen": 1.0,
+                "multiplug": 0.02,
+                "miscellaneous": 0.05
+            },
+            {
+                "aircon": 5.0,
+                "lighting": 0.2,
+                "kitchen": 1.0,
+                "multiplug": 0.02,
+                "miscellaneous": 0.05
+            }
+        ]
+    }
+}

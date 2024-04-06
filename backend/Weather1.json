@@ -1,0 +1,9 @@
+{
+    "weather": {
+        "temperature": 30.0,
+        "heatindex": 35.0,
+        "sunlight": 8.0,
+        "humidity": 88.0,
+        "wind": 5.0
+    }
+}

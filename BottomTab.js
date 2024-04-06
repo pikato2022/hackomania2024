@@ -1,37 +1,60 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import HomeScreen from './HomeScreen';
+import { MaterialCommunityIcons } from '@expo/vector-icons';
+
 const Tab = createBottomTabNavigator();
 
 const BottomTab = () => {
   return (
     <Tab.Navigator
-    //   initialRouteName="Feed"
-    //   screenOptions={{
-    //     tabBarActiveTintColor: '#e91e63',
-    //   }}
+      initialRouteName="Home"
+      screenOptions={{
+        tabBarActiveTintColor: '#1ABC9C',
+      }}
     >
       <Tab.Screen
-        name="Feed"
+        name="Home"
         component={HomeScreen}
-        // options={{
-        //   tabBarLabel: 'Home',
-        //   tabBarIcon: ({ color, size }) => (
-        //     <MaterialCommunityIcons name="home" color={color} size={size} />
-        //   ),
-        // }}
+        options={{
+          tabBarLabel: 'Home',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="home" color={color} size={size} />
+          ),
+        }}
       />
         <Tab.Screen
-        name="Abc"
+        name="Consumption"
         component={HomeScreen}
-        // options={{
-        //   tabBarLabel: 'Home',
-        //   tabBarIcon: ({ color, size }) => (
-        //     <MaterialCommunityIcons name="home" color={color} size={size} />
-        //   ),
-        // }}
+        options={{
+          tabBarLabel: 'Home',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="home-lightning-bolt" color={color} size={size} />
+          ),
+        }}
+    />
+        <Tab.Screen
+        name="Sustainability"
+        component={HomeScreen}
+        options={{
+          tabBarLabel: 'Home',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="leaf" color={color} size={size} />
+          ),
+        }}
+      />
+      <Tab.Screen
+        name="Reward"
+        component={HomeScreen}
+        options={{
+          tabBarLabel: 'Home',
+          tabBarIcon: ({ color, size }) => (
+            <MaterialCommunityIcons name="gift" color={color} size={size} />
+          ),
+        }}
       />
     </Tab.Navigator>
+    
   );
 }
 export default BottomTab;

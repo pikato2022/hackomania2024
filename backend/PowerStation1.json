@@ -1,0 +1,15 @@
+{
+    "power_station": {
+        "cnt": 1,
+        "kWout": 1000,
+        "RatioRenewable": 0.11,
+        "SourcesIndex": [
+            {
+                "Gas": 0.85,
+                "Solar": 0.09,
+                "Imports": 0.01,
+                "GridStorage": 0.05
+            }
+        ]
+    }
+}

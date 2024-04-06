@@ -8,7 +8,7 @@ const Rewards = () => {
     <View style={styles.container}>
       <Card>
         <Text style={styles.textContainer}>Reward Points</Text>
-        <Text>YOu earn 50,000 points this month...</Text>
+        <Text>You earn 50,000 points this month...</Text>
       </Card>
       <Vouchers></Vouchers>
       <Vouchers></Vouchers>

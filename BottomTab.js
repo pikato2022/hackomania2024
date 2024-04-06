@@ -1,10 +1,11 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import StyleSheet from "react-native";
 import HomeScreen from "./HomeScreen";
 import Rewards from "./Rewards";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-
 import Consumption from "./ConsumptionScreen";
+
 const Tab = createBottomTabNavigator();
 
 const BottomTab = () => {
@@ -99,9 +100,5 @@ const BottomTab = () => {
     </Tab.Navigator>
   );
 };
-// const styles = StyleSheet.create({
-//     container: {
-//         height: 100
-//     }
-// })
+
 export default BottomTab;

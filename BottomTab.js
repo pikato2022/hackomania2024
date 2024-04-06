@@ -1,10 +1,11 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import StyleSheet from "react-native";
 import HomeScreen from "./HomeScreen";
 import Rewards from "./Rewards";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
-
 import Consumption from "./ConsumptionScreen";
+
 const Tab = createBottomTabNavigator();
 
 const BottomTab = () => {
@@ -43,7 +44,7 @@ const BottomTab = () => {
         name="Consumption"
         component={Consumption}
         options={{
-          tabBarLabel: "Home",
+          tabBarLabel: "Consumption",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="home-lightning-bolt"
@@ -62,7 +63,7 @@ const BottomTab = () => {
         name="Sustainability"
         component={HomeScreen}
         options={{
-          tabBarLabel: "Home",
+          tabBarLabel: "Sustainability",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="leaf"
@@ -81,7 +82,7 @@ const BottomTab = () => {
         name="Reward"
         component={Rewards}
         options={{
-          tabBarLabel: "Home",
+          tabBarLabel: "Rewards",
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons
               name="gift"
@@ -99,9 +100,5 @@ const BottomTab = () => {
     </Tab.Navigator>
   );
 };
-// const styles = StyleSheet.create({
-//     container: {
-//         height: 100
-//     }
-// })
+
 export default BottomTab;

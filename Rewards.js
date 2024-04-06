@@ -5,6 +5,7 @@ import Vouchers from "./components/vouchers";
 
 const Rewards = () => {
   return (
+    // <View style={{ height: 3000 }}>
     <ScrollView>
       <View style={styles.container}>
         <Card>
@@ -18,6 +19,8 @@ const Rewards = () => {
         <Vouchers></Vouchers>
       </View>
     </ScrollView>
+    // </View>
+
     // <ScrollView>
     // </ScrollView>
   );

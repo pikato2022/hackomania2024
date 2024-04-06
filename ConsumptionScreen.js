@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import {
+    SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
@@ -12,14 +13,29 @@ import Legend from "./components/legend";
 // import CustomBarChart from './components/barchart';
 
 const chartConfig = {
-  backgroundGradientFrom: "#1E2923",
-  backgroundGradientFromOpacity: 0,
-  backgroundGradientTo: "#08130D",
-  backgroundGradientToOpacity: 0.5,
-  color: (opacity = 1) => `rgba(26, 255, 146, ${opacity})`,
-  strokeWidth: 2,
-  useShadowColorFromDataset: false,
-};
+    backgroundGradientFrom: "#fff",
+    backgroundGradientTo: "#fff",
+    barPercentage: 0.7,
+    height:200,
+    fillShadowGradient: `rgba(1, 122, 205, 1)`,
+    fillShadowGradientOpacity: 1,
+    decimalPlaces: 0, // optional, defaults to 2dp
+    color: (opacity = 1) => `rgba(1, 122, 205, 1)`,
+    labelColor: (opacity = 1) => `rgba(0, 0, 0, 1)`,
+  
+    style: {
+      borderRadius: 16,
+      fontFamily: "Bogle-Regular",
+    },
+    propsForBackgroundLines: {
+      strokeWidth: 1,
+      stroke: "#e3e3e3",
+      strokeDasharray: "0",
+    },
+    propsForLabels: {
+      fontFamily: "Bogle-Regular",
+    },
+  };
 const data = [
   {
     name: "ClubHouse",
@@ -51,24 +67,13 @@ const data = [
   },
 ];
 const bcdata = {
-  labels: ["1", "2", "3", "4", "5", "6", "7", "8", "9"],
-  datasets: [
-    {
-      data: [40, 84, 56, 40, 60, 55, 40, 72, 40],
-      colors: [
-        (opacity = 1) => `#BE95FF`,
-        (opacity = 1) => `#78A9FF`,
-        (opacity = 1) => `#FFFFFF`,
-        (opacity = 1) => `#FFFFFF`,
-        (opacity = 1) => `#FFFFFF`,
-        (opacity = 1) => `#FFFFFF`,
-        (opacity = 1) => `#FFFFFF`,
-        (opacity = 1) => `#FFFFFF`,
-        (opacity = 1) => `#FFFFFF`,
-      ],
-    },
-  ],
-};
+    labels: ["January", "February", "March", "April", "May", "June"],
+    datasets: [
+      {
+        data: [20, 45, 28, 80, 99, 43]
+      }
+    ]
+  };
 const Consumption = () => {
   const [flexDirection, setflexDirection] = useState("column");
 
@@ -82,34 +87,20 @@ const Consumption = () => {
         ["Security", 400],
       ]}
     >
-      <Card>
+      <Card >
         <PieChartComponent style={{ justifyContent: "center" }} />
       </Card>
+
       <Card>
-        <BarChart
-          style={{
-            marginLeft: -2 * 4,
-          }}
-          data={bcdata}
-          width={400}
-          height={200}
-          chartConfig={{
-            backgroundColor: "transparent",
-            backgroundGradientTo: "white",
-            backgroundGradientFromOpacity: 0,
-            backgroundGradientFrom: "white",
-            backgroundGradientToOpacity: 0,
-            color: (opacity = 1) => `#FFFFFF`,
-            barPercentage: 0.28,
-            barRadius: 5,
-          }}
-          withHorizontalLabels={false}
-          fromZero={true}
-          withCustomBarColorFromData={true}
-          flatColor={true}
-          withInnerLines={false}
-          showBarTops={false}
-          showValuesOnTopOfBars={true}
+        <Text style={{textAlign:"center", marginVertical:10, fontSize:20}}>Distribution by Days</Text>
+            <BarChart
+        // style={graphStyle}
+        
+        data={bcdata}
+        width={300}
+        height={200}
+        chartConfig={chartConfig}
+        verticalLabelRotation={30}
         />
       </Card>
     </PreviewLayout>
@@ -155,7 +146,7 @@ const PreviewLayout = ({
   selectedValue,
   setSelectedValue,
 }) => (
-  <ScrollView style={{ padding: 10, flex: 1 }} alwaysBounceVertical={false}>
+  <SafeAreaView style={{ padding: 10, flex: 1 }} alwaysBounceVertical={true}>
     <Text style={styles.label}>{label}</Text>
     <View style={styles.row}>
       {titles.map((value) => (
@@ -172,7 +163,7 @@ const PreviewLayout = ({
     <View style={[styles.container, { [label]: selectedValue }]}>
       {children}
     </View>
-  </ScrollView>
+  </SafeAreaView>
 );
 
 const styles = StyleSheet.create({
@@ -245,6 +236,9 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 20,
   },
+  card:{
+    backgroundColor:'white'
+  }
 });
 
 export default Consumption;

@@ -22,7 +22,8 @@ const styles = StyleSheet.create({
     marginVertical: 6,    
     minWidth: "80%",
     minHeight: 180,
-    backgroundColor: "#1ABC9C",
+    height:undefined,
+    backgroundColor: "#FFF",
   },
   cardContent: {
     marginHorizontal: 18,

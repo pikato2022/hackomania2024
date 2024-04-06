@@ -1,0 +1,20 @@
+{
+    "utilities": [{
+        "name": "Clubhouse",
+        "kWin": 1000
+    },
+    {
+        "name": "Block 1",
+        "kWin": 2000
+    },
+    {
+        "name": "Block 2",
+        "kWin": 3000
+    },
+    {
+        "name": "Security",
+        "kWin": 4000
+    }
+
+]
+}

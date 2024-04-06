@@ -1,0 +1,128 @@
+{
+    "kwIn": [
+        {
+            "day": "1",
+            "consumption": 100
+        },
+        {
+            "day": "2",
+            "consumption": 200
+        },
+        {
+            "day": "3",
+            "consumption": 300
+        },
+        {
+            "day": "4",
+            "consumption": 400
+        },
+        {
+            "day": "5",
+            "consumption": 500
+        },
+        {
+            "day": "6",
+            "consumption": 600
+        },
+        {
+            "day": "7",
+            "consumption": 700
+        },
+        {
+            "day": "8",
+            "consumption": 800
+        },
+        {
+            "day": "9",
+            "consumption": 900
+        },
+        {
+            "day": "10",
+            "consumption": 800
+        },
+        {
+            "day": "11",
+            "consumption": 700
+        },
+        {
+            "day": "12",
+            "consumption": 600
+        },
+        {
+            "day": "13",
+            "consumption": 500
+        },
+        {
+            "day": "14",
+            "consumption": 400
+        },
+        {
+            "day": "15",
+            "consumption": 300
+        },
+        {
+            "day": "16",
+            "consumption": 200
+        },
+        {
+            "day": "17",
+            "consumption": 100
+        },
+        
+        {
+            "day": "18",
+            "consumption": 200
+        },
+        {
+            "day": "19",
+            "consumption": 300
+        },
+        {
+            "day": "20",
+            "consumption": 400
+        },
+        {
+            "day": "21",
+            "consumption": 500
+        },
+        {
+            "day": "22",
+            "consumption": 600
+        },
+        {
+            "day": "23",
+            "consumption": 700
+        },
+        {
+            "day": "24",
+            "consumption": 800
+        },
+        {
+            "day": "25",
+            "consumption": 900
+        },{
+            "day": "26",
+            "consumption": 600
+        },
+        {
+            "day": "27",
+            "consumption": 300
+        },
+        {
+            "day": "28",
+            "consumption": 100
+        },
+        {
+            "day": "29",
+            "consumption": 400
+        },
+        {
+            "day": "30",
+            "consumption": 500
+        },
+        {
+            "day": "31",
+            "consumption": 800
+        }
+    ]
+}

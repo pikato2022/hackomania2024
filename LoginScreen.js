@@ -20,7 +20,7 @@ import {
 
 const LoginScreen = ({ navigation }) => {
   const onPressLogin = () => {
-    navigation.navigate("HomeScreen");
+    navigation.navigate("n.power");
   };
   const onPressForgotPassword = () => {
     // Do something about forgot password operation
@@ -97,7 +97,7 @@ const styles = StyleSheet.create({
   },
   loginBtn: {
     width: "80%",
-    backgroundColor: "#E48D87",
+    backgroundColor: "#fadca0",
     borderRadius: 25,
     height: 50,
     alignItems: "center",

@@ -1,22 +1,28 @@
 import * as React from "react";
-import { StyleSheet, Text, View, ScrollView } from "react-native";
+import { StyleSheet, Text, View, ScrollView, FlatList } from "react-native";
 import Card from "./components/card";
+import Vouchers from "./components/vouchers";
 
-const HomeScreen = () => {
+const Rewards = () => {
   return (
+    // <View style={{ height: 3000 }}>
     <ScrollView>
       <View style={styles.container}>
         <Card>
-          <Text style={styles.textContainer}>Power Consumption</Text>
-        </Card>
-        <Card>
-          <Text style={styles.textContainer}>Estate Overview</Text>
-        </Card>
-        <Card>
           <Text style={styles.textContainer}>Reward Points</Text>
+          <Text>You earn 50,000 points this month...</Text>
         </Card>
+        <Vouchers></Vouchers>
+        <Vouchers></Vouchers>
+        <Vouchers></Vouchers>
+        <Vouchers></Vouchers>
+        <Vouchers></Vouchers>
       </View>
     </ScrollView>
+    // </View>
+
+    // <ScrollView>
+    // </ScrollView>
   );
 };
 
@@ -32,4 +38,5 @@ const styles = StyleSheet.create({
     fontWeight: "500",
   },
 });
-export default HomeScreen;
+
+export default Rewards;

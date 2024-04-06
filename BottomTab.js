@@ -27,7 +27,7 @@ const BottomTab = () => {
         name="Consumption"
         component={HomeScreen}
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'Consumption',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="home-lightning-bolt" color={color} size={size} />
           ),
@@ -37,7 +37,7 @@ const BottomTab = () => {
         name="Sustainability"
         component={HomeScreen}
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'Sustainability',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="leaf" color={color} size={size} />
           ),
@@ -47,7 +47,7 @@ const BottomTab = () => {
         name="Reward"
         component={HomeScreen}
         options={{
-          tabBarLabel: 'Home',
+          tabBarLabel: 'Reward',
           tabBarIcon: ({ color, size }) => (
             <MaterialCommunityIcons name="gift" color={color} size={size} />
           ),

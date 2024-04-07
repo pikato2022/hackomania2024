@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import {
-    SafeAreaView,
+  SafeAreaView,
   ScrollView,
   StyleSheet,
   Text,
@@ -13,29 +13,29 @@ import Legend from "./components/legend";
 // import CustomBarChart from './components/barchart';
 
 const chartConfig = {
-    backgroundGradientFrom: "#fff",
-    backgroundGradientTo: "#fff",
-    barPercentage: 0.7,
-    height:200,
-    fillShadowGradient: `rgba(1, 122, 205, 1)`,
-    fillShadowGradientOpacity: 1,
-    decimalPlaces: 0, // optional, defaults to 2dp
-    color: (opacity = 1) => `rgba(1, 122, 205, 1)`,
-    labelColor: (opacity = 1) => `rgba(0, 0, 0, 1)`,
-  
-    style: {
-      borderRadius: 16,
-      fontFamily: "Bogle-Regular",
-    },
-    propsForBackgroundLines: {
-      strokeWidth: 1,
-      stroke: "#e3e3e3",
-      strokeDasharray: "0",
-    },
-    propsForLabels: {
-      fontFamily: "Bogle-Regular",
-    },
-  };
+  backgroundGradientFrom: "#fff",
+  backgroundGradientTo: "#fff",
+  barPercentage: 0.7,
+  height: 200,
+  fillShadowGradient: `rgba(1, 122, 205, 1)`,
+  fillShadowGradientOpacity: 1,
+  decimalPlaces: 0, // optional, defaults to 2dp
+  color: (opacity = 1) => `rgba(1, 122, 205, 1)`,
+  labelColor: (opacity = 1) => `rgba(0, 0, 0, 1)`,
+
+  style: {
+    borderRadius: 16,
+    fontFamily: "Bogle-Regular",
+  },
+  propsForBackgroundLines: {
+    strokeWidth: 1,
+    stroke: "#e3e3e3",
+    strokeDasharray: "0",
+  },
+  propsForLabels: {
+    fontFamily: "Bogle-Regular",
+  },
+};
 const data = [
   {
     name: "ClubHouse",
@@ -67,43 +67,51 @@ const data = [
   },
 ];
 const bcdata = {
-    labels: ["January", "February", "March", "April", "May", "June"],
-    datasets: [
-      {
-        data: [20, 45, 28, 80, 99, 43]
-      }
-    ]
-  };
+  labels: ["January", "February", "March", "April", "May", "June"],
+  datasets: [
+    {
+      data: [20, 45, 28, 80, 99, 43],
+    },
+  ],
+};
 const Consumption = () => {
   const [flexDirection, setflexDirection] = useState("column");
 
   return (
-    <PreviewLayout
-      label="Overview"
-      titles={[
-        ["ClubHouse", 100],
-        ["Block 1", 200],
-        ["Block 2", 300],
-        ["Security", 400],
-      ]}
-    >
-      <Card >
-        <PieChartComponent style={{ justifyContent: "center" }} />
-      </Card>
+    <ScrollView>
+      <View style={styles.page}>
+        <PreviewLayout
+          label="Overview"
+          titles={[
+            ["ClubHouse", 100],
+            ["Block 1", 200],
+            ["Block 2", 300],
+            ["Security", 400],
+          ]}
+        >
+          <Card>
+            <PieChartComponent style={{ justifyContent: "center" }} />
+          </Card>
 
-      <Card>
-        <Text style={{textAlign:"center", marginVertical:10, fontSize:20}}>Distribution by Days</Text>
+          <Card>
+            <Text
+              style={{ textAlign: "center", marginVertical: 10, fontSize: 20 }}
+            >
+              Distribution by Months
+            </Text>
             <BarChart
-        // style={graphStyle}
-        
-        data={bcdata}
-        width={300}
-        height={200}
-        chartConfig={chartConfig}
-        verticalLabelRotation={30}
-        />
-      </Card>
-    </PreviewLayout>
+              // style={graphStyle}
+
+              data={bcdata}
+              width={300}
+              height={200}
+              chartConfig={chartConfig}
+              verticalLabelRotation={30}
+            />
+          </Card>
+        </PreviewLayout>
+      </View>
+    </ScrollView>
   );
 };
 const PieChartComponent = () => {
@@ -172,6 +180,9 @@ const styles = StyleSheet.create({
   //     marginTop: 8,
   //     // backgroundColor: 'aliceblue',
   //   },
+  page: {
+    height: 950,
+  },
   box: {
     width: 50,
     height: 50,
@@ -236,9 +247,9 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 20,
   },
-  card:{
-    backgroundColor:'white'
-  }
+  card: {
+    backgroundColor: "white",
+  },
 });
 
 export default Consumption;

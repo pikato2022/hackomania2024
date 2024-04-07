@@ -29,7 +29,7 @@ const Rewards = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "whitesmoke",
     alignItems: "center",
     justifyContents: "center",
   },

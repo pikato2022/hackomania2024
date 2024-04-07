@@ -1,6 +1,6 @@
 import { NavigationContainer } from "@react-navigation/native";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
-import StyleSheet from "react-native";
+import StyleSheet, { Button } from "react-native";
 import HomeScreen from "./HomeScreen";
 import Rewards from "./Rewards";
 import { MaterialCommunityIcons } from "@expo/vector-icons";
@@ -34,7 +34,7 @@ const BottomTab = () => {
             />
           ),
           tabBarLabelStyle: {
-            fontSize: 15,
+            fontSize: 13,
             marginBottom: 10,
           },
         }}
@@ -54,7 +54,7 @@ const BottomTab = () => {
             />
           ),
           tabBarLabelStyle: {
-            fontSize: 15,
+            fontSize: 13,
             marginBottom: 10,
           },
         }}
@@ -73,7 +73,7 @@ const BottomTab = () => {
             />
           ),
           tabBarLabelStyle: {
-            fontSize: 15,
+            fontSize: 13,
             marginBottom: 10,
           },
         }}
@@ -92,7 +92,7 @@ const BottomTab = () => {
             />
           ),
           tabBarLabelStyle: {
-            fontSize: 15,
+            fontSize: 13,
             marginBottom: 10,
           },
         }}

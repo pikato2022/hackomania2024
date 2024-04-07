@@ -9,6 +9,7 @@ import {
   View,
   TextInput,
   TouchableOpacity,
+  Image,
 } from "react-native";
 import {
   Colors,
@@ -35,6 +36,7 @@ const LoginScreen = ({ navigation }) => {
 
   return (
     <View style={styles.container}>
+      {/* <Image source={require("./assets/logo.jpg")} /> */}
       <Text style={styles.title}>n.power</Text>
       <View style={styles.inputView}>
         <TextInput

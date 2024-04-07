@@ -8,12 +8,17 @@ const HomeScreen = () => {
       <View style={styles.container}>
         <Card>
           <Text style={styles.textContainer}>Power Consumption</Text>
+          <Text>5kW/15kW</Text>
+          <Text style={styles.textContainer}>Energy Consumption</Text>
+          <Text>200kW/300kW</Text>
         </Card>
         <Card>
-          <Text style={styles.textContainer}>Estate Overview</Text>
+          <Text style={styles.textContainer}>Sustainability Guide</Text>
+          <Text>It's cold tonight! Try going without aircon</Text>
         </Card>
         <Card>
           <Text style={styles.textContainer}>Reward Points</Text>
+          <Text>Click on the Rewards Tab to see more!</Text>
         </Card>
       </View>
     </ScrollView>
@@ -23,12 +28,13 @@ const HomeScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#fff",
+    backgroundColor: "#1ABC9C",
     alignItems: "center",
     justifyContents: "center",
+    height: 800,
   },
   textContainer: {
-    fontSize: 15,
+    fontSize: 18,
     fontWeight: "500",
   },
 });

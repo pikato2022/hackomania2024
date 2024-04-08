@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
     backgroundColor: "whitesmoke",
     alignItems: "center",
     justifyContents: "center",
+    height: 900,
   },
   textContainer: {
     fontSize: 15,
